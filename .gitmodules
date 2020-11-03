@@ -1,6 +1,6 @@
-[submodule "zsh/.zgen"]
-	path = zsh/.zgen
-	url = https://github.com/tarjoilija/zgen.git
 [submodule "kitty/.config/kitty/kitty-themes"]
 	path = kitty/.config/kitty/kitty-themes
 	url = https://github.com/dexpota/kitty-themes.git
+[submodule "zsh/.config/zsh/zgen"]
+	path = zsh/.config/zsh/zgen
+	url = https://github.com/tarjoilija/zgen.git
