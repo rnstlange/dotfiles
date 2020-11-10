@@ -1,0 +1,23 @@
+map <Space> <Leader>
+set nocompatible
+syntax on
+set background=dark
+
+let g:airline_powerline_fonts = 1
+
+call plug#begin('~/.vim/bundle')
+	Plug 'vim-airline/vim-airline'
+	Plug 'morhetz/gruvbox'
+	Plug 'lervag/vimtex'
+call plug#end()
+
+set number relativenumber
+
+autocmd vimenter * ++nested colorscheme gruvbox
+"autocmd BufRead,BufNewFile *.ms set filetype=groff
+"autocmd BufWritePost *.ms !pandoc & -t pdf --variable mainfont="Droid Serif"
+
+map <leader>c :w! \| !compiler <c-r>%<CR><CR>
+let g:tex_flavor = 'latex'
+let g:vimtex_compiler_method = 'tectonic'
+let g:vimtex_view_method = 'zathura'
