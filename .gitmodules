@@ -4,3 +4,6 @@
 [submodule "zsh/.config/zsh/zgen"]
 	path = zsh/.config/zsh/zgen
 	url = https://github.com/tarjoilija/zgen.git
+[submodule "spacemacs/.config/emacs"]
+	path = spacemacs/.config/emacs
+	url = https://github.com/syl20bnr/spacemacs
